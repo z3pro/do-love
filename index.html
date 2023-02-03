@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style= "position: relative;">
+    <h2>Do you love me?</h2>
+    <button id="yes" onclick="clickYes()">Yes</button>
+    <button id="no" onclick="clickNo()" style="position: absolute;">No</button>
+    <script>
+        let no = document.querySelector('#no');
+        function clickYes() {
+            alert('Tớ cũng thế!')
+        }
+        function clickNo() {
+            let random1 = Math.floor(Math.random()*500);
+            let random2= Math.floor(Math.random()*800);
+            no.style.top = random1 +'px';
+            no.style.left = random2 + 'px';
+        }
+
+    </script>
+</body>
+
+</html>
